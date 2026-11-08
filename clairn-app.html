@@ -126,10 +126,6 @@
   .hero-visual { perspective: 1200px; }
   .hero-visual .win { transform: rotateY(-9deg) rotateX(3deg); box-shadow: 0 40px 80px -24px rgba(0,0,0,.7), 0 0 0 1px var(--line), 0 0 90px -10px color-mix(in srgb, var(--mint) 35%, transparent); }
   @media (max-width: 900px) { .hero-visual .win { transform: none; } }
-  .trust { display: flex; flex-wrap: wrap; gap: 10px; padding: 8px 0 40px; }
-  .trust span { padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line); background: color-mix(in srgb, var(--surface) 80%, transparent); font-size: .9rem; color: var(--muted); }
-  .trust span::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 8px; background: var(--mint); }
-  .trust span:nth-child(2)::before { background: var(--amber); } .trust span:nth-child(3)::before { background: var(--lavender); }
   .card, .step, .win { transition: transform .25s ease, border-color .25s ease; }
   .card:hover, .step:hover { transform: translateY(-3px); border-color: color-mix(in srgb, var(--mint) 45%, var(--line)); }
   .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
@@ -361,9 +357,6 @@
     .lead { font-size: 1.05rem; margin-bottom: 18px; }
     .cta { flex-direction: column; align-items: stretch; }
     .cta .btn { text-align: center; padding: 14px 20px; font-size: 1.02rem; }
-    .trust { flex-wrap: nowrap; overflow-x: auto; padding: 4px 14px 12px; margin: 0; width: 100%; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
-    .trust::-webkit-scrollbar { display: none; }
-    .trust span { flex: 0 0 auto; font-size: .85rem; }
     section { padding: 34px 0; }
     h2 { font-size: 1.5rem; line-height: 1.2; }
     h2 .num { width: 30px; height: 30px; font-size: .9rem; margin-right: 8px; }
@@ -455,7 +448,6 @@
         <div class="shot"><img id="hero-shot" alt=""></div></div>
     </div>
   </div>
-  <div class="wrap trust" aria-label="Highlights"><span>Local-first</span><span>No account for the core app</span><span>Windows app</span><span>Optional Chrome extension</span></div>
 
   <!-- 1. the idea and the problem it solves -->
   <section id="idea">
